@@ -80,7 +80,7 @@ def RLC_sL(f, R, L, C):
 def RLC_sC(f, R, L, C):
     s = 1j * 2 * np.pi * f
     numerator =  1
-    denominator = s**2 * L * C + s * L * C + 1
+    denominator = s**2 * L * C + s * R * C + 1
     return numerator / denominator
 
 def RLC_sRL(f, R, L, C):
